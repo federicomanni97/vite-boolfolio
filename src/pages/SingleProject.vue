@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center">
+    <div class="text-center bg-dark h-100">
         <h1 class="text-uppercase fw-bold"> {{project.title}} </h1>
         <img :src="`${store.imgPath}${project.image}`" :alt="project.title" class="imgwidth">
     </div>
@@ -40,5 +40,8 @@
 
 .imgwidth{
     width: 1400px;
+}
+.vh100{
+    height: 100vh;
 }
 </style>

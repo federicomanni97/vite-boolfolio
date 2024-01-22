@@ -1,5 +1,6 @@
 <template>
-    <main class="container">
+    <div class="bg-dark">
+        <main class="container">
         <div class="row align-items-center justify-content-center bg-dark">
             <h1 class="text-center">Project List</h1>
             <!-- <div class="col-12 col-md-4 col-lg-3 " v-for="project in projects" :key="project.id">
@@ -14,7 +15,7 @@
             <div class="card w-100 d-flex align-items-center border-0 bg-dark" style="width: 18rem;"  v-for="project in projects" :key="project.id">
                 <img :src="`${store.imgPath}${project.image}`" alt="" class="w-50">
                 <div class="card-body">
-                    <p class="card-text">
+                    <p class="card-text my-4 fs-2">
                         <router-link :to="{ name: 'single-project', params: { slug: project.slug } }" class="btn btn-primary" >
                             {{ project.title }}
                         </router-link>
@@ -22,7 +23,8 @@
                 </div>
             </div>
         </div>
-    </main>
+        </main>
+    </div>
 </template>
 
 <script>

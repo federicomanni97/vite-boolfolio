@@ -1,7 +1,9 @@
 <template>
-    <div class="text-center bg-dark h-100">
+    <div class="text-center bg-dark h-100 d-flex flex-column align-items-center">
         <h1 class="text-uppercase text-danger py-4 fw-bold"> {{project.title}} </h1>
         <img :src="`${store.imgPath}${project.image}`" :alt="project.title" class="imgwidth">
+        <h1 class="text-uppercase text-danger py-4 fw-bold mt-3"> Show </h1>
+        <img :src="`${store.imgPath}${project.image_alternative}`" alt="" class="imgwidth">
     </div>
 </template>
 
@@ -39,7 +41,7 @@
 <style lang="scss" scoped>
 
 .imgwidth{
-    width: 1400px;
+    width: 1200px;
 }
 .vh100{
     height: 100vh;

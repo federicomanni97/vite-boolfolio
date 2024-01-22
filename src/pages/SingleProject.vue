@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <h1> {{project.title}} </h1>
-        <img :src="`${store.imgPath}${project.image}`" :alt="project.title">
+    <div class="text-center">
+        <h1 class="text-uppercase fw-bold"> {{project.title}} </h1>
+        <img :src="`${store.imgPath}${project.image}`" :alt="project.title" class="imgwidth">
     </div>
 </template>
 
@@ -38,4 +38,7 @@
 
 <style lang="scss" scoped>
 
+.imgwidth{
+    width: 1400px;
+}
 </style>

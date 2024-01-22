@@ -1,5 +1,8 @@
 <template>
-  <AppHeader/>
+  <div class="bg-dark">
+    <AppHeader/>
+  </div>
+  
   <!-- router view caricherà le pagine richieste -->
   <router-view></router-view>
 </template>

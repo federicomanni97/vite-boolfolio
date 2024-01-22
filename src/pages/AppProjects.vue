@@ -1,8 +1,8 @@
 <template>
-    <main class="container-fluid">
-        <h1>Project List</h1>
-        <div class="row flex-column mt-4">
-            <div class="col-12 col-md-4 col-lg-3 " v-for="project in projects" :key="project.id">
+    <main class="container">
+        <div class="row align-items-center justify-content-center bg-dark">
+            <h1 class="text-center">Project List</h1>
+            <!-- <div class="col-12 col-md-4 col-lg-3 " v-for="project in projects" :key="project.id">
                 <ul class="list-unstyled">
                     <li>
                         <router-link :to="{ name: 'single-project', params: { slug: project.slug } }" class="btn btn-primary" >
@@ -10,6 +10,16 @@
                         </router-link>
                     </li>
                 </ul>
+            </div> -->
+            <div class="card w-100 d-flex align-items-center border-0 bg-dark" style="width: 18rem;"  v-for="project in projects" :key="project.id">
+                <img :src="`${store.imgPath}${project.image}`" alt="" class="w-50">
+                <div class="card-body">
+                    <p class="card-text">
+                        <router-link :to="{ name: 'single-project', params: { slug: project.slug } }" class="btn btn-primary" >
+                            {{ project.title }}
+                        </router-link>
+                    </p>
+                </div>
             </div>
         </div>
     </main>
@@ -28,13 +38,15 @@ import AppCard from '../components/AppCard.vue';
             return {
                 store,
                 projects: [],
+                currentPage: 1,
             }
         },
         methods: {
             getAllProjects(){
-                axios.get(`${this.store.apiUrl}/projects`).then((res)=>{
+                axios.get(`${this.store.apiUrl}/projects${this.store.pages}${this.currentPage}`).then((res)=>{
                     console.log(res.data);
                     this.projects = res.data.results.data;
+                    console.log(this.projects);
                 });
             },
             // getAllProjects(){
@@ -54,5 +66,10 @@ import AppCard from '../components/AppCard.vue';
 </script>
 
 <style lang="scss" scoped>
+    img{
+        width: 1700px;
+        height: 1000px;
+        object-fit: cover;
+    }
 
 </style>

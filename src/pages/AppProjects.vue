@@ -16,7 +16,7 @@
                 <img :src="`${store.imgPath}${project.image}`" alt="" class="w-50">
                 <div class="card-body">
                     <p class="card-text my-4 fs-2">
-                        <router-link :to="{ name: 'single-project', params: { slug: project.slug } }" class="btn btn-primary" >
+                        <router-link :to="{ name: 'single-project', params: { slug: project.slug } }" class="btn btn-primary fs-3 mb-3" >
                             {{ project.title }}
                         </router-link>
                     </p>

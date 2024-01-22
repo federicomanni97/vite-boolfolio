@@ -16,5 +16,8 @@
 
 <style lang="scss" scoped>
 
+.red{
+    color: red !important;
+}
 
 </style>

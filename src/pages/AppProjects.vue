@@ -2,7 +2,7 @@
     <div class="bg-dark">
         <main class="container">
         <div class="row align-items-center justify-content-center bg-dark">
-            <h1 class="text-center">Project List</h1>
+            <h1 class="text-danger text-center">Project List</h1>
             <!-- <div class="col-12 col-md-4 col-lg-3 " v-for="project in projects" :key="project.id">
                 <ul class="list-unstyled">
                     <li>
@@ -69,9 +69,10 @@ import AppCard from '../components/AppCard.vue';
 
 <style lang="scss" scoped>
     img{
-        width: 1700px;
+        width: 1600px;
         height: 1000px;
         object-fit: cover;
+        object-position: top;
     }
 
 </style>

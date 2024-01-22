@@ -1,6 +1,6 @@
 <template>
     <div class="text-center bg-dark h-100">
-        <h1 class="text-uppercase fw-bold"> {{project.title}} </h1>
+        <h1 class="text-uppercase text-danger py-4 fw-bold"> {{project.title}} </h1>
         <img :src="`${store.imgPath}${project.image}`" :alt="project.title" class="imgwidth">
     </div>
 </template>

@@ -22,7 +22,7 @@ import AppCard from '../components/AppCard.vue';
     export default {
         name: 'AppProjects',
         components: {
-            // AppCard
+            AppCard
         },
         data(){
             return {

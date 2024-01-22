@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1>Single Project</h1>
-        {{ project.title }}
+        <h1 v-if="project"> {{project.title}} </h1>
+        <img :src="`${store.imgPath}${project.image}`" alt="project.title">
     </div>
 </template>
 
@@ -13,6 +13,7 @@
         name: 'SingleProject',
         data(){
             return {
+                store,
                 project: null
             }
         },
@@ -21,6 +22,11 @@
                 console.log(this.$route);
                 axios.get(`${this.store.apiUrl}/projects/${this.$route.params.slug}`).then((res)=>{
                     console.log(res.data);
+                    if(res.data.results){
+                       this.post = res.data.results 
+                    } else {
+                        this.$router.push({name: 'not-fount'})
+                    }
                 })
             }
         },

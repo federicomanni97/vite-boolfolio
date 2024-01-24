@@ -5,6 +5,7 @@
         <h1 class="text-uppercase text-danger py-4 fw-bold mt-3"> Show </h1>
         <img :src="`${store.imgPath}${project.image_alternative}`" alt="" class="imgwidth">
     </div>
+    <route-link class="nav-link" :to="{name: 'single-project', params: {slug: project.slug}}"></route-link>
 </template>
 
 <script>

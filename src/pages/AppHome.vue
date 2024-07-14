@@ -27,7 +27,7 @@
                 <h4>SCSS</h4>
             </div>
             <div>
-                <h4>VueJS</h4>
+                <h4>Vue JS</h4>
             </div>
             <div>
                 <h4>Laravel</h4>

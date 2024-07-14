@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Contact Us</h1>
+        <h1 class="text-danger text-center py-4">Contact Me!</h1>
         <ContactForm/>
     </div>
 </template>

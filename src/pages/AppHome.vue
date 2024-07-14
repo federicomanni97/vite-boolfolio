@@ -10,7 +10,7 @@
     </div>
     <div class="d-flex flex-column align-items-center justify-content-center">
         <h2 class="text-danger">Le mie competenze:</h2>
-        <div class="text-light d-flex align-items-center justify-content-center m-2">
+        <div class="text-light d-flex align-items-center justify-content-center m-2 py-2 text-decoration-underline">
             <div>
                 <h4>HTML</h4>
             </div>
@@ -37,14 +37,14 @@
             </div>
         </div>
     </div>
-    <div>
-        <h2 class="text-light">
+    <div class="text-center m-2">
+        <h2 class="fs-2 my-4 text-danger">
             Contacts:
         </h2>
-        <p class="text-light fs-5">+39 345 92 32 030</p>
-        <p class="text-light fs-5">Email: manni_federico@libero.it</p>
-        <p class="text-light fs-5">Github: github.com/federicomanni97</p>
-        <p class="text-light fs-5">Linkedin: linkedin.com/in/federicomanni2909/</p>
+        <p class="text-light fs-4 text-decoration-underline">+39 345 92 32 030</p>
+        <p class="text-light fs-4 text-decoration-underline">Email: manni_federico@libero.it</p>
+        <p class="text-light fs-4 text-decoration-underline">Github: github.com/federicomanni97</p>
+        <p class="text-light fs-4 text-decoration-underline">Linkedin: linkedin.com/in/federicomanni2909/</p>
     </div>
 </template>
 

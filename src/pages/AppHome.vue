@@ -8,6 +8,35 @@
             <p class="text-light fs-3">Ciao sono Federico Manni, e mi considero una persona socievole e comunicativa, con una naturale propensione al lavoro di squadra. Sono appassionato di tecnologia e mi entusiasma l'idea di contribuire a progetti innovativi, mentre continuo a cercare nuove opportunità per crescere sia professionalmente che personalmente.</p>
         </div>
     </div>
+    <div class="text-center my-5">
+        <swiper
+        :slidesPerView="4"
+        :spaceBetween="0"
+        :autoplay="{
+        delay: 2500,
+        disableOnInteraction: false,
+        }"
+        :pagination="{
+        clickable: true,
+        }"
+        :navigation="true"
+        :modules="modules"
+        class="mySwiper"
+    >
+    
+        <swiper-slide class="text-light fs-2">HTML</swiper-slide>
+        <swiper-slide class="text-light fs-2">CSS</swiper-slide>
+        <swiper-slide class="text-light fs-2">Bootstrap</swiper-slide>
+        <swiper-slide class="text-light fs-2">Javascript</swiper-slide>
+        <swiper-slide class="text-light fs-2">SCSS</swiper-slide>
+        <swiper-slide class="text-light fs-2">Vue JS</swiper-slide>
+        <swiper-slide class="text-light fs-2">Laravel</swiper-slide>
+        <swiper-slide class="text-light fs-2">PHP</swiper-slide>
+         
+        </swiper>
+    </div>   
+
+
     <div class="d-flex flex-column align-items-center justify-content-center">
         <h2 class="text-danger">Le mie competenze:</h2>
         <div class="text-light d-flex align-items-center justify-content-center m-2 py-2 text-decoration-underline">
@@ -49,12 +78,20 @@
 </template>
 
 <script>
-    name: 'AppHome'
-    export default {
-        
-    }
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+  import 'swiper/css';
+  import 'swiper/css/pagination';
+  import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+  export default {
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
+    setup() {
+      return {
+        modules: [Autoplay, Pagination, Navigation],
+      };
+    },
+  };
 </script>
-
-<style lang="scss" scoped>
-
-</style>

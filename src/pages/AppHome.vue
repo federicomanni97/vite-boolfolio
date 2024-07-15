@@ -9,6 +9,8 @@
         </div>
     </div>
     <div class="text-center my-5">
+        <h2 class="text-danger">Le mie competenze:</h2>
+    
         <swiper
         :slidesPerView="4"
         :spaceBetween="0"
@@ -23,21 +25,21 @@
         :modules="modules"
         class="mySwiper"
     >
-    
-        <swiper-slide class="text-light fs-2">HTML</swiper-slide>
-        <swiper-slide class="text-light fs-2">CSS</swiper-slide>
-        <swiper-slide class="text-light fs-2">Bootstrap</swiper-slide>
-        <swiper-slide class="text-light fs-2">Javascript</swiper-slide>
-        <swiper-slide class="text-light fs-2">SCSS</swiper-slide>
-        <swiper-slide class="text-light fs-2">Vue JS</swiper-slide>
-        <swiper-slide class="text-light fs-2">Laravel</swiper-slide>
-        <swiper-slide class="text-light fs-2">PHP</swiper-slide>
-         
+        <swiper-slide class="text-light fs-2"><img class="logos" src="/public/images/html-logo.png" alt=""></swiper-slide>
+        <swiper-slide class="text-light fs-2"><img class="logos" src="/public/images/css-logo.png" alt=""></swiper-slide>
+        <swiper-slide class="text-light fs-2"><img class="logos" src="/public/images/bootstrap-logo.png" alt=""></swiper-slide>
+        <swiper-slide class="text-light fs-2"><img class="logos" src="/public/images/javascript-logo.png" alt=""></swiper-slide>
+        <swiper-slide class="text-light fs-2"><img class="logos" src="/public/images/scss-logo.png" alt=""></swiper-slide>
+        <swiper-slide class="text-light fs-2"><img class="logos" src="/public/images/vue-logo.png" alt=""></swiper-slide>
+        <swiper-slide class="text-light fs-2"><img class="logos" src="/public/images/laravel-logo.png" alt=""></swiper-slide>
+        <swiper-slide class="text-light fs-2"><img class="logos" src="/public/images/php-logo.png" alt=""></swiper-slide>    
+        
         </swiper>
+
     </div>   
 
 
-    <div class="d-flex flex-column align-items-center justify-content-center">
+    <!-- <div class="d-flex flex-column align-items-center justify-content-center">
         <h2 class="text-danger">Le mie competenze:</h2>
         <div class="text-light d-flex align-items-center justify-content-center m-2 py-2 text-decoration-underline">
             <div>
@@ -65,7 +67,7 @@
                 <h4>PHP</h4>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="text-center m-2">
         <h2 class="fs-2 my-4 text-danger">
             Contacts:

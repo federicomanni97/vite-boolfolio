@@ -4,11 +4,11 @@
             <img class="my-image" src="../assets/images/Black-bg-photo.jpg" alt="">
         </div>
         <div>
-            <h1 class="text-danger">About Me:</h1>
-            <p class="text-light fs-3">Ciao sono Federico Manni, e mi considero una persona socievole e comunicativa, con una naturale propensione al lavoro di squadra. Sono appassionato di tecnologia e mi entusiasma l'idea di contribuire a progetti innovativi, mentre continuo a cercare nuove opportunità per crescere sia professionalmente che personalmente.</p>
+            <h2 class="text-danger">About Me:</h2>
+            <p class="text-light fs-3">Ciao sono Federico Manni e sono un Junior Full Stack Web Developer. mi considero una persona socievole e comunicativa, con una naturale propensione al lavoro di squadra. Sono appassionato di tecnologia e mi entusiasma l'idea di contribuire a progetti innovativi, mentre continuo a cercare nuove opportunità per crescere sia professionalmente che personalmente.</p>
         </div>
     </div>
-    <div class="text-center my-5">
+    <div class="text-center my-5 py-5">
         <h2 class="text-danger">Le mie competenze:</h2>
     
         <swiper
@@ -68,6 +68,13 @@
             </div>
         </div>
     </div> -->
+    <div class="text-light text-center my-5 py-3">
+        <h2 class="text-danger">Soft Skills: </h2>
+        <p class="fs-4">Doti relazionali, comunicative ed organizzative</p>
+        <p class="fs-4">Attitudine al teamwork</p>
+        <p class="fs-4">Abilità analitiche e di Problem Solving</p>
+        <p class="fs-4">Gestione del tempo e delle priorità</p>
+    </div>
     <div class="text-center m-2">
         <h2 class="fs-2 my-4 text-danger">
             Contacts:
